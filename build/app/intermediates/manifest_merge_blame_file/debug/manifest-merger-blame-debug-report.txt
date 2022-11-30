@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.rast.opem"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\android\app\src\debug\AndroidManifest.xml:7:5-66
+15-->C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\android\app\src\debug\AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\android\app\src\main\AndroidManifest.xml:4:5-80
+16-->C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\android\app\src\main\AndroidManifest.xml:4:22-78
+17
+18    <application
+19        android:name="android.app.Application"
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.8.0] C:\Users\lans\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+23        android:label="opem" >
+24        <activity
+25            android:name="com.rast.opem.MainActivity"
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27            android:exported="true"
+28            android:hardwareAccelerated="true"
+29            android:launchMode="singleTop"
+30            android:theme="@style/LaunchTheme"
+31            android:windowSoftInputMode="adjustResize" >
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+40                android:name="io.flutter.embedding.android.NormalTheme"
+41                android:resource="@style/NormalTheme" />
+42
+43            <intent-filter>
+44                <action android:name="android.intent.action.MAIN" />
+45                <action android:name="android.intent.action.VIEW" />
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+48                <category android:name="android.intent.category.DEFAULT" />
+49                <category android:name="android.intent.category.BROWSABLE" />
+50
+51                <data
+52                    android:host="login-callback"
+53                    android:scheme="io.supabase.flutterquickstart" />
+54            </intent-filter>
+55        </activity>
+56        <!--
+57             Don't delete the meta-data below.
+58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+59        -->
+60        <meta-data
+61            android:name="flutterEmbedding"
+62            android:value="2" />
+63
+64        <provider
+64-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+65            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+65-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+66            android:authorities="com.rast.opem.flutter.image_provider"
+66-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+67            android:exported="false"
+67-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+68            android:grantUriPermissions="true" >
+68-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+69            <meta-data
+69-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+71                android:resource="@xml/flutter_image_picker_file_paths" />
+71-->[:image_picker_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+72        </provider>
+73
+74        <activity
+74-->[:url_launcher_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+75            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+75-->[:url_launcher_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+76            android:exported="false"
+76-->[:url_launcher_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+77            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+77-->[:url_launcher_android] C:\Users\lans\Documents\CODING\Apps\Test\Supabase-Open-Source-Ecommerce-Multivendor\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+78
+79        <uses-library
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\lans\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+80            android:name="androidx.window.extensions"
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\lans\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+81            android:required="false" />
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\lans\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+82        <uses-library
+82-->[androidx.window:window:1.0.0-beta04] C:\Users\lans\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+83            android:name="androidx.window.sidecar"
+83-->[androidx.window:window:1.0.0-beta04] C:\Users\lans\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+84            android:required="false" />
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\lans\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+85    </application>
+86
+87</manifest>
